@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 帮助与反馈H5改版
 > Only develop for **SohuTV Native Application** now
 
@@ -29,3 +30,6 @@
 	 - 发送按钮(发送成功后隐藏发送模块)
   
   - contact(联系我们)
+=======
+# IPC-h5-site
+>>>>>>> 76bdba2b4ac6bad8c13dca03badfdf7a021e383d
