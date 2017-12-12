@@ -1,0 +1,56 @@
+.view5 {
+  .part1 {
+    width: 3.52rem;
+    height: 4.01rem;
+    bottom: 5.43rem;
+    left: 0;
+    background: url(#{$image_path}view5-part1.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part2 {
+    width: 3.35rem;
+    height: 3.73rem;
+    bottom: 0.29rem;
+    right: 0;
+    background: url(#{$image_path}view5-part2.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part3 {
+    width: 7.5rem;
+    height: 13.34rem;
+    bottom: 0;
+    left: 0;
+    background: url(#{$image_path}view5-part3.1.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part1.fadeInRight {
+    @include fadeInRight(100%, '5-1');
+  }
+
+  .part2.fadeInLeft {
+    @include fadeInLeft(100%, '5-2');
+  }
+}
+
+.rock5-3 {
+  will-change: transform;
+  animation: rock5-3 3.9s linear 1.3s infinite;
+
+  @keyframes rock5-3 {
+    @for $i from 0 through 29 {
+      #{$i * 3.44}% {
+        opacity: 1;
+        background-image: url('../../img/view5-part3.' + (($i + 1) * 2) + '.png');
+      }
+    }
+  }
+}

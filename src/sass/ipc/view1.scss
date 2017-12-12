@@ -1,0 +1,83 @@
+.view1 {
+  .price {
+    padding: 0.56rem 0 0.2rem;
+    @extend %text-align;
+    @extend %colorec9866;
+    @extend %font-zero;
+
+    .num {
+      font-size: 0.6rem;
+    }
+
+    .unit {
+      font-size: 0.24rem;
+    }
+  }
+
+  .link {
+    @extend %text-align;
+    @extend %font-zero;
+
+    .purchase {
+      display: inline-block;
+      width: 3.22rem;
+      height: 0.71rem;
+      line-height: 0.71rem;
+      margin-top: 0.56rem;
+      margin-bottom: 0.38rem;
+      font-size: 0.36rem;
+      border-radius: 0.355rem;
+      @extend %text-align;
+      @extend %bkgec9866;
+      @extend %colorfff;
+    }
+
+    .download {
+      display: inline-block;
+      width: 3.22rem;
+      height: 0.71rem;
+      line-height: 0.71rem;
+      font-size: 0.36rem;
+      border: 0.02rem solid #ee9861;
+      border-radius: 0.355rem;
+      box-sizing: border-box;
+      @extend %text-align;
+      @extend %coloree9861;
+    }
+  }
+
+  .part1 {
+    width: 4.8rem;
+    height: 6.4rem;
+    bottom: 0;
+    left: 1.35rem;
+    background: url(#{$image_path}view1-part1.1.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+}
+
+.fadeInRock1-1 {
+  will-change: transform;
+  animation: fadeIn1-1 800ms linear 800ms, rock1-1 900ms linear 1500ms 1 forwards;
+
+  @keyframes fadeIn1-1 {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes rock1-1 {
+    @for $i from 0 through 8 {
+      #{$i * 12.5}% {
+        opacity: 1;
+        background-image: url('../../img/view1-part1.' + ($i + 1) + '.png');
+      }
+    }
+  }
+}

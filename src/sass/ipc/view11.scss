@@ -1,0 +1,76 @@
+.view11 {
+  .part1 {
+    width: 4.41rem;
+    height: 7.06rem;
+    bottom: 0;
+    right: 1.63rem;
+    background: url(#{$image_path}view11-part1.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part2 {
+    width: 4.74rem;
+    height: 6.11rem;
+    bottom: 0;
+    right: 0;
+    background: url(#{$image_path}view11-part2.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part3-1 {
+    width: 1.01rem;
+    height: 1.82rem;
+    bottom: 7.5rem;
+    left: 0.41rem;
+    background: url(#{$image_path}view11-part3.1.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part3-2 {
+    width: 1.88rem;
+    height: 2.76rem;
+    bottom: 4.2rem;
+    right: 1.88rem;
+    background: url(#{$image_path}view11-part3.2.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part3-3 {
+    width: 1.18rem;
+    height: 2.03rem;
+    bottom: 1.32rem;
+    right: 0.64rem;
+    background: url(#{$image_path}view11-part3.3.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part1.fadeInRight {
+    @include fadeInRight(100%, '11-1');
+  }
+
+  .part2.fadeInLeft {
+    @include fadeInLeft(100%, '11-2');
+  }
+
+  .part3-1.fadeInUp {
+    @include fadeInUp(9.32rem, '11-3-1');
+  }
+
+  .part3-2.fadeInDown {
+    @include fadeInDown(9.14rem, '11-3-2');
+  }
+
+  .part3-3.fadeInLeft {
+    @include fadeInLeft(1.82rem, '11-3-3');
+  }
+}

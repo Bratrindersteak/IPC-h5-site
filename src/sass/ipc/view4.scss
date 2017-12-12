@@ -1,0 +1,33 @@
+.view4 {
+  background-position: center top;
+
+  .part1 {
+    width: 7.5rem;
+    height: 2.6rem;
+    bottom: 6.3rem;
+    left: 0;
+    background: url(#{$image_path}view4-part1.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part2 {
+    width: 7.5rem;
+    height: 5.31rem;
+    bottom: 0;
+    left: 0;
+    background: url(#{$image_path}view4-part2.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part1.fadeInDown {
+    @include fadeInDown(7.1rem, '4-1');
+  }
+
+  .part2.fadeInUp {
+    @include fadeInUp(100%, '4-2');
+  }
+}

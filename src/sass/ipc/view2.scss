@@ -1,0 +1,105 @@
+.view2 {
+  .part1 {
+    width: 7.5rem;
+    height: 5.8rem;
+    bottom: 2.5rem;
+    left: 0;
+    background: url(#{$image_path}view2-part1.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part2-1 {
+    width: 0;
+    height: 5.98rem;
+    bottom: 2.41rem;
+    left: 0;
+    background: url(#{$image_path}view2-part2.png) no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+    z-index: 1;
+    @extend %absolute;
+  }
+
+  .part2-2 {
+    width: 0;
+    height: 5.8rem;
+    bottom: 2.5rem;
+    left: 0;
+    background: url(#{$image_path}view2-part1.png) no-repeat;
+    background-position: left center;
+    background-size: auto 100%;
+    filter: blur(1.5px);
+    @extend %absolute;
+  }
+
+  .part1.fadeIn {
+    animation-name: fadeIn2-1;
+    animation-timing-function: linear;
+
+    @keyframes fadeIn2-1 {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  }
+
+  .part2-1.fadeInRightLeft {
+    animation-name: fadeInRightLeft2-2-1;
+    animation-timing-function: linear;
+
+    @keyframes fadeInRightLeft2-2-1 {
+      0% {
+        opacity: 1;
+        width: 0.79rem;
+      }
+
+      33.33% {
+        opacity: 1;
+        width: 4.54rem;
+      }
+
+      66.66% {
+        opacity: 1;
+        width: 8.29rem;
+      }
+
+      100% {
+        opacity: 1;
+        width: 4.54rem;
+      }
+    }
+  }
+
+  .part2-2.fadeInRightLeft {
+    animation-name: fadeInRightLeft2-2-2;
+    animation-timing-function: linear;
+
+    @keyframes fadeInRightLeft2-2-2 {
+      0% {
+        opacity: 1;
+        width: 0;
+      }
+
+      33.33% {
+        opacity: 1;
+        width: 3.75rem;
+      }
+
+      66.66% {
+        opacity: 1;
+        width: 7.5rem;
+      }
+
+      100% {
+        opacity: 1;
+        width: 3.75rem;
+      }
+    }
+  }
+}

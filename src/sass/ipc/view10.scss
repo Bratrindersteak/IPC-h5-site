@@ -1,0 +1,70 @@
+.view10 {
+  .part1 {
+    width: 4.22rem;
+    height: 8.3rem;
+    bottom: 0.31rem;
+    left: 1.64rem;
+    background: url(#{$image_path}view10-part1.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part2-1 {
+    width: 1.58rem;
+    height: 1.99rem;
+    bottom: 0.37rem;
+    left: 0.05rem;
+    background: url(#{$image_path}view10-part2.1.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part2-2 {
+    width: 1.32rem;
+    height: 2.32rem;
+    bottom: 0.66rem;
+    right: 0.32rem;
+    background: url(#{$image_path}view10-part2.2.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part3 {
+    width: 2.6rem;
+    height: 1.7rem;
+    bottom: 5.78rem;
+    left: 2.06rem;
+    background: url(#{$image_path}view10-part3.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part1.fadeInDown {
+    @include fadeInDown(100%, '10-1');
+  }
+
+  .part2-1.fadeInRight {
+    @include fadeInRight(100%, '10-2-1');
+  }
+
+  .part2-2.fadeInLeft {
+    @include fadeInLeft(100%, '10-2-2');
+  }
+
+  .part3.fadeIn {
+    animation-name: fadeIn10-3;
+    @keyframes fadeIn10-3 {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.view3 {
+  .part1 {
+    width: 4.09rem;
+    height: 3.81rem;
+    bottom: 0;
+    left: 2.05rem;
+    background: url(#{$image_path}view3-part1.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part1.fadeInUp {
+    @include fadeInUp(100%, '3-1');
+  }
+}

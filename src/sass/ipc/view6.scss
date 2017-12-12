@@ -1,0 +1,142 @@
+.view6 {
+  .part1 {
+    width: 5.75rem;
+    height: 9.07rem;
+    bottom: 0;
+    left: 0.875rem;
+    background: url(#{$image_path}view6-part1.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part2 {
+    width: 4.73rem;
+    height: 7.57rem;
+    bottom: 0;
+    left: 1.385rem;
+    background: url(#{$image_path}view6-part2.1.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part3 {
+    width: 4.69rem;
+    height: 1.16rem;
+    bottom: 6.37rem;
+    left: 1.405rem;
+    background: url(#{$image_path}view6-part3.1.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part1.fadeInDown {
+    animation-duration: 1s;
+    animation-delay: 300ms;
+    @include fadeInDown(13.34rem, '6-1');
+  }
+
+  .part2.fadeInDownBanner {
+    animation: fadeInDown6-2 1s ease 300ms, banner6-2 16s ease-in-out 1.3s infinite;
+
+    @keyframes fadeInDown6-2 {
+      from {
+        opacity: 0;
+        transform: translateY(-13.34rem);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes banner6-2 {
+      0% {
+        opacity: 1;
+        background-image: url(#{$image_path}view6-part2.1.png);
+      }
+
+      25% {
+        opacity: 1;
+        background-image: url(#{$image_path}view6-part2.2.png);
+      }
+
+      50% {
+        opacity: 1;
+        background-image: url(#{$image_path}view6-part2.3.png);
+      }
+
+      75% {
+        opacity: 1;
+        background-image: url(#{$image_path}view6-part2.4.png);
+      }
+
+      100% {
+        opacity: 1;
+        background-image: url(#{$image_path}view6-part2.1.png);
+      }
+    }
+  }
+
+  .part3.fadeInDownBanner {
+    animation: fadeInDown6-3 1s ease 300ms, banner6-3 16s ease 1.3s infinite;
+
+    @keyframes fadeInDown6-3 {
+      from {
+        opacity: 0;
+        transform: translateY(-13.34rem);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes banner6-3 {
+      0% {
+        opacity: 1;
+        background-image: url(#{$image_path}view6-part3.1.png);
+      }
+
+      25% {
+        opacity: 1;
+        background-image: url(#{$image_path}view6-part3.2.png);
+      }
+
+      50% {
+        opacity: 1;
+        background-image: url(#{$image_path}view6-part3.3.png);
+      }
+
+      75% {
+        opacity: 1;
+        background-image: url(#{$image_path}view6-part3.4.png);
+      }
+
+      100% {
+        opacity: 1;
+        background-image: url(#{$image_path}view6-part3.1.png);
+      }
+    }
+  }
+
+  .part3.fadeInDown {
+    animation: fadeInDown6-3-again 1s ease;
+
+    @keyframes fadeInDown6-3-again {
+      from {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}

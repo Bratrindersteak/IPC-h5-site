@@ -1,0 +1,88 @@
+.view8 {
+  .part1-1 {
+    width: 1.84rem;
+    height: 2.24rem;
+    bottom: 4.23rem;
+    left: 2.88rem;
+    background: url(#{$image_path}view8-part1.1.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part1-2 {
+    width: 4.3rem;
+    height: 4.3rem;
+    bottom: 3.28rem;
+    left: 1.6rem;
+    background: url(#{$image_path}view8-part1.2.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part1-3 {
+    width: 7.24rem;
+    height: 7.24rem;
+    bottom: 1.81rem;
+    left: 0.13rem;
+    background: url(#{$image_path}view8-part1.3.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part1-1.fadeInRight {
+    @include fadeInRight(4.72rem, '8-1-1');
+  }
+
+  .part1-2.fadeInLeftCircle {
+    animation: fadeInLeft8-1-2 1s ease 500ms, circle8-1-2 9s linear 1.5s infinite;
+
+    @keyframes fadeInLeft8-1-2 {
+      from {
+        opacity: 0;
+        transform: translateX(5.9rem);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes circle8-1-2 {
+      @for $i from 0 through 10 {
+        #{$i * 10}% {
+          opacity: 1;
+          transform: rotate(-#{$i * 36}deg);
+        }
+      }
+    }
+  }
+
+  .part1-3.fadeInLeftCircle {
+    animation: fadeInLeft8-1-3 1s ease 500ms, circle8-1-3 9s linear 1.5s infinite;
+
+    @keyframes fadeInLeft8-1-3 {
+      from {
+        opacity: 0;
+        transform: translateX(7.37rem);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes circle8-1-3 {
+      @for $i from 0 through 10 {
+        #{$i * 10}% {
+          opacity: 1;
+          transform: rotate(#{$i * 36}deg);
+        }
+      }
+    }
+  }
+}

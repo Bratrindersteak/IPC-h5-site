@@ -1,0 +1,33 @@
+.view7 {
+  .part1 {
+    width: 5.6rem;
+    height: 6.82rem;
+    bottom: 0;
+    left: 0;
+    background: url(#{$image_path}view7-part1.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    @extend %absolute;
+  }
+
+  .part1.fadeInRight {
+    animation-name: fadeInRight7-1;
+
+    @keyframes fadeInRight7-1 {
+      0% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+
+      60% {
+        opacity: 1;
+        transform: translateX(10%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+}
