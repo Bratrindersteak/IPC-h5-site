@@ -3,6 +3,7 @@
 
 - 技术栈
   - fullPage.js
+  - Mustache
   - css3动画
   - webpack
   - sass
